@@ -151,7 +151,7 @@ App({
 
 **需要注意：你可以把短信云函数和URLScheme云函数分别放置在不同云开发环境中，但必须保证所放置的云开发环境属于你操作的小程序**
 
-**另外，出于防止滥用考虑，短信发送的云调用能力需要真实小程序用户访问才可以生效，你不能使用云端测试、WEB-SDK以及其他非wx.cloud调用方式，会提示如下错误：**
+**另外，出于防止滥用考虑，短信发送的云调用能力需要真实小程序用户访问才可以生效，你不能使用云端测试、云开发JS-SDK以及其他非wx.cloud调用方式，会提示如下错误：**
 ![](res/05.png)
 
 如果你想在其他处使用此能力，可以使用服务端API来做正常HTTP调用，具体访问[官方文档](https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/cloudbase/cloudbase.sendSms.html)
