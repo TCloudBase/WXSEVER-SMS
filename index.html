@@ -1,0 +1,15 @@
+<script src="web2weapp.js" charset="utf-8"></script>
+<script>
+  window.onload = function(){
+    window.web2weapp.init({
+      appId: 'wx999999', //替换为自己小程序的AppID
+      gh_ID: 'gh_999999',//替换为自己小程序的原始ID
+      env_ID: 'tcb-env',//替换小程序底下云开发环境ID
+      function: {
+        name:'openMini',//提供UrlScheme服务的云函数名称
+        data:{} //向这个云函数中传入的自定义参数
+      },
+      path: 'pages/index/index.html' //打开小程序时的路径
+    })
+  }
+</script>
